@@ -4811,6 +4811,8 @@ fieldset:disabled .btn {
   }
 }
 
+
+
 @media (min-width: 768px) {
   /* line 3289, src/assets/scss/vendors/bootstrap.min.css */
   .dropdown-menu-md-start {
@@ -5261,6 +5263,10 @@ fieldset:disabled .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
+
+
 
 /* line 3605, src/assets/scss/vendors/bootstrap.min.css */
 .nav {
@@ -50358,7 +50364,7 @@ select:invalid {
 /* line 1056, src/assets/scss/custom/_style.scss */
 .dropdown-grid-item {
   width: auto;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 /* line 1060, src/assets/scss/custom/_style.scss */
@@ -50414,6 +50420,48 @@ select:invalid {
 .main-menu li.nav-item:hover .dropdown-menu:before {
   opacity: 1;
 }
+
+
+
+
+
+.sub-menu-2{
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+  position: absolute;
+  display: block;
+  margin-left: 231px;
+  margin-top: -45px;
+  color: #175cff;
+}
+
+.hover-me a{
+  color: #575757;
+}
+
+.dropdown-grid-item a:hover .hover-me {
+  color: var(--bs-primary);
+  opacity: 1;
+}
+
+/* 
+.dropdown-grid-item:hover a{
+  color: #175cff;
+  opacity: 1;
+} */
+
+.sub-menu-2{
+  color: va;
+}
+
+
+
+
+
+
+
 
 /* line 1095, src/assets/scss/custom/_style.scss */
 .main-menu li a.nav-link {
@@ -50628,6 +50676,9 @@ select:invalid {
 .offcanvas-body .dropdown-grid-item.last-item {
   display: none;
 }
+
+
+
 
 @media (max-width: 1199px) {
   /* line 1240, src/assets/scss/custom/_style.scss */
