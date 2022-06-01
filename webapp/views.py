@@ -1,6 +1,17 @@
 from django.shortcuts import render
 from .models import Subscrib, Contact
 from django.core.mail import send_mail
+from django.conf import settings
+
+# for sendig mail
+# from django.core.mail import EmailMultiAlteratives
+# from django.core.mail import EmailMultiAlteratives
+# from django.template.loader import render_to_string
+# from django.utils.html import strip_tags
+
+from django.template.loader import get_template
+from django.core.mail import EmailMessage
+
 
 # Create your views here.
 
@@ -11,12 +22,53 @@ def home(request):
         email = request.POST.get('email', '')
         subscrib = Subscrib(email=email)
         subscrib.save()
+        
+        html_tpl_path = 'webapp/email-message.html'
+        context_data =  {'email': f"{email}" }
+        email_html_template = get_template(html_tpl_path).render(context_data)
+        receiver_email = 'patelmohil143@gmail.com'
+        email_msg = EmailMessage('Welcome from django app', 
+                                    email_html_template, 
+                                    settings. APPLICATION_EMAIL,
+                                    [receiver_email],
+                                    reply_to=[settings.APPLICATION_EMAIL]
+                                    )
+        # this is the crucial part that sends email as html content but not as a plain text
+        email_msg.content_subtype = 'html'
+        email_msg.send(fail_silently=False)
 
-        send_mail('Welcome user',                      # subject
-        f"{email} Came in Contact With Our Site.",     # message
-        'mohil.crawlmagic@gmail.com',                  # from
-        ['patelmohil143@gmail.com'],                   # to
-        fail_silently=False)
+
+
+
+
+    # to = request.POST.get('patelmohil143@gmail.com')
+    # content = request.POST.get('content')
+
+    # html_content = render_to_string("webapp/email-message.html", {'title':'test email', 'content':content})
+    # test_content = strip_tags(html_content)
+    
+    # email = send_mail(
+    #     "testing",
+    #     test_content,
+    #     settings.EMAIL_HOST_USER,
+    #     [to]
+    # )
+    # email.attach_alternative(html_content, 'text/html')
+    # email.send(fail_silently=False)
+
+
+
+
+    # if request.method=="POST":
+    #     email = request.POST.get('email', '')
+    #     subscrib = Subscrib(email=email)
+    #     subscrib.save()
+
+    #     send_mail('Welcome user',                      # subject
+    #     f"{email} Came in Contact With Our Site.",     # message
+    #     'mohil.crawlmagic@gmail.com',                  # from
+    #     ['patelmohil143@gmail.com'],                   # to
+    #     fail_silently=False)
     return render(request, 'webapp/index.html')
 
 
@@ -24,7 +76,7 @@ def services(request):
     return render(request, 'webapp/services.html')
 
 def pricing(request):
-    return render(request, "webapp/services.html")
+    return render(request, "webapp/pricing.html")
 
 def itsolution(request):
     return render(request, 'webapp/index-9.html')
@@ -41,12 +93,28 @@ def contactus(request):
         message = request.POST.get('message', '')
         contact = Contact(first_name=first_name, last_name=last_name, phone=phone, email=email, message=message)
         contact.save()
+ 
 
-        send_mail('Contact Details',
-                  f"{first_name} {last_name}'s Data Received",
-                  'mohil.crawlmagic@gmail.com',               
-                  ['patelmohil143@gmail.com'], 
-                  fail_silently=False)
+        html_tpl_path = 'webapp/contact-us-message.html'
+        context_data =  {'firstname': f"{first_name}", 'lastname': f"{last_name}", 'phone': f"{phone}", 'email': f"{email}", 'message': f"{message}" }
+        email_html_template = get_template(html_tpl_path).render(context_data)
+        receiver_email = 'patelmohil143@gmail.com'
+        email_msg = EmailMessage('Welcome from django app', 
+                                    email_html_template, 
+                                    settings. APPLICATION_EMAIL,
+                                    [receiver_email],
+                                    reply_to=[settings.APPLICATION_EMAIL]
+                                    )
+        # this is the crucial part that sends email as html content but not as a plain text
+        email_msg.content_subtype = 'html'
+        email_msg.send(fail_silently=False)
+
+
+        # send_mail('Contact Details',
+        #           f"{first_name} {last_name}'s Data Received",
+        #           'mohil.crawlmagic@gmail.com',               
+        #           ['patelmohil143@gmail.com'], 
+        #           fail_silently=False)
     return render(request, 'webapp/contact-us.html')
 
 def career(request):

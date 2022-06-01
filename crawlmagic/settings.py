@@ -136,3 +136,5 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'mohil.crawlmagic@gmail.com'
 EMAIL_HOST_PASSWORD = 'crwalmagic@07'
 
+APPLICATION_EMAIL = 'Admin<test@gmail.com>'
+DEFAULT_FROM_EMAIL = 'Admin<test@gmail.com>'

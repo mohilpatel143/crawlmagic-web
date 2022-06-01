@@ -8169,8 +8169,7 @@ fieldset:disabled .btn {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  color: green;
-  background-color: blue;
+  /* background-color: lightskyblue; */
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
@@ -50457,6 +50456,11 @@ select:invalid {
 }
 
 
+.div .hero-section{
+  opacity: 0.3;
+}
+
+
 
 
 
@@ -50488,13 +50492,13 @@ select:invalid {
 .navbar-light .action-btns a.btn-link,
 .navbar-dark.sticky-header.affix .main-menu li a.nav-link,
 .navbar-dark.sticky-header.affix .action-btns a.btn-link {
-  color: var(--body-color);
+  color: var(--bs-light);
 }
 
 /* line 1116, src/assets/scss/custom/_style.scss */
 .navbar-light.sticky-header.affix,
 .navbar-dark.sticky-header.affix {
-  background: var(--bs-white);
+  background: #05003b;
 }
 
 /* line 1120, src/assets/scss/custom/_style.scss */
