@@ -24,7 +24,7 @@ def home(request):
         subscrib.save()
         
         html_tpl_path = 'webapp/email-message.html'
-        context_data =  {'email': f"{email}" }
+        context_data = {'email': f"{email}" }
         email_html_template = get_template(html_tpl_path).render(context_data)
         receiver_email = 'patelmohil143@gmail.com'
         email_msg = EmailMessage('Welcome from django app', 
