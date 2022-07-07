@@ -26,7 +26,7 @@
     <meta property="og:image:height" content="600">
 
     <!--meta-->
-    <meta name="description" content="this is description.......">
+    <meta name="description" content="Scrap web content with a custom web scraper app developed using Python. Create web scraper app with crawlmagic, a competent app development company, One of the best scraping and developing company in ahmedabad.">
     <meta name="keywords" content="crawlmagic, crawlmagic.com, it company, scraping, web scraping, python development, java development, ReactJS development, crawlmagic in ahmedabad ">
     <meta name="robots" content="INDEX, FOLLOW"> <!-- if write NOINDEX NOFOLLOW then site has been not show in search engine -->
     <!-- <meta name="author" content="ThemeTags"> -->
@@ -924,6 +924,27 @@
     <script src="{% static 'js/vendors/parallax.min.js' %}"></script>
     <script src="{% static 'js/vendors/aos.js' %}"></script>
     <script src="{% static 'js/app.js' %}"></script>
+    <script>!(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                initPayload: '/greet',
+                customData: { language: "en" },
+                socketUrl: "http://localhost:5005",
+                // add other props here
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+      </script>
 
     <!--endbuild-->
     {% block js %} {% endblock %}

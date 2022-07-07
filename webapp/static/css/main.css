@@ -10980,15 +10980,6 @@ fieldset:disabled .btn {
   background-image: var(--bs-gradient) !important;
 }
 
-.bg-lightdark{
-  background-color: var(--bs-dark-light);
-}
-.bg-lightblue{
-  background-color: lightcyan;
-}
-.bg-lightskyblue{
-  background-color: lightskyblue;
-}
 
 /* line 6823, src/assets/scss/vendors/bootstrap.min.css */
 .user-select-all {
