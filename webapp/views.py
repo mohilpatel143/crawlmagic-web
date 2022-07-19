@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from requests import request
 from .models import Subscrib, Contact
 from django.core.mail import send_mail
 from django.conf import settings
@@ -96,7 +97,7 @@ def contactus(request):
  
 
         html_tpl_path = 'webapp/contact-us-message.html'
-        context_data =  {'firstname': f"{first_name}", 'lastname': f"{last_name}", 'phone': f"{phone}", 'email': f"{email}", 'message': f"{message}" }
+        context_data = {'firstname': f"{first_name}", 'lastname': f"{last_name}", 'phone': f"{phone}", 'email': f"{email}", 'message': f"{message}" }
         email_html_template = get_template(html_tpl_path).render(context_data)
         receiver_email = 'patelmohil143@gmail.com'
         email_msg = EmailMessage('Welcome from django app', 
@@ -296,6 +297,14 @@ def netflix_data_scraping(request):
 def real_estate_data_intelligence(request):
     return render(request, 'webapp/industries/real_estate/real_estate_data_intelligence.html')
 
+def zillow_data_scraping(request):
+    return render(request, 'webapp/industries/real_estate/zillow_data_scraping.html')
+
+def realtor_data_scraping(request):
+    return render(request, 'webapp/industries/real_estate/realtor_data_scraping.html')
+
+def housing_data_scraping(request):
+    return render(request, 'webapp/industries/real_estate/housing_data_scraping.html')
 
 # ========================== Idustries / Recruitment ========================== 
 def job_listings_and_data_feeds(request):

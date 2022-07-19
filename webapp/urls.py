@@ -83,6 +83,9 @@ urlpatterns = [
 
     # ======================= Real Estate ======================= 
     path("real-estate-data-intelligence/", views.real_estate_data_intelligence, name="real_estate_data_intelligence"),
+    path("zillow-data-scraping/", views.zillow_data_scraping, name="zillow_data_scraping"),
+    path("realtor-data-scraping/", views.realtor_data_scraping, name="realtor_data_scraping"),
+    path("housing-data-scraping/", views.housing_data_scraping, name="housing_data_scraping"),
 
     # ========================== Recruitment ==========================  
     path("job-listings-and-data-feeds/", views.job_listings_and_data_feeds, name="job_listings_and_data_feeds"),
