@@ -748,7 +748,7 @@
                 style="background: url('assets/img/page-header-bg.svg')no-repeat bottom right">
                 <div class="container">
                     <div class="row justify-content-between">
-                        <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
+                        <div class="col-md-12 col-lg-4 mb-md-4 mb-lg-0">
                             <div class="footer-single-col">
                                 <div class="footer-single-col mb-4">
                                     <!-- <img src="{% static 'images/logo-white.png' %}" alt="logo"
@@ -795,30 +795,46 @@
                                 </div> -->
                             </div>
                         </div>
-                        <div class="col-md-12 col-lg-7 mt-4 mt-md-0 mt-lg-0">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
-                                    <div class="footer-single-col">
-                                        <h3 data-aos="fade-up">Primary Pages</h3>
-                                        <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li data-aos="fade-up"><a href="/" class="text-decoration-none">Home</a></li>
-                                            <li data-aos="fade-up"><a href="/about-us" class="text-decoration-none">About Us</a></li>
-                                            <li data-aos="fade-up"><a href="/services" class="text-decoration-none">Services</a></li>
-                                            <li data-aos="fade-up"><a href="/career" class="text-decoration-none">Career</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+
+                        <div class="col-md-4">
+                            <br><h3 data-aos="fade-up">Pages</h3>
+                            
+                            <ul class="list-unstyled footer-nav-list mb-lg-10" style="display: flex; list-style: none; " data-aos="fade-up">
+                                <li style="margin: 0 15px; "><a class="text-white" style="text-decoration: none;" href="/">Home</a></li>
+                                <li style="margin: 0 15px;"><a class="text-white" style="text-decoration: none;" href="/about-us">About Us</a></li>
+                                <li style="margin: 0 15px;"><a class="text-white" style="text-decoration: none;" href="/#service">Services</a></li>
+                                <li style="margin: 0 15px;"><a class="text-white" style="text-decoration: none;" href="/career">Career</a></li>
+                                <li style="margin: 0 15px;"><a class="text-white" style="text-decoration: none;" href="/contact-us">Contact</a></li>
+                              </ul>
+                        </div>
+
+
+                        <!-- <div class="col-md-4 col-lg-7 mt-4 mt-md-0 mt-lg-0"> -->
+                            <!-- <div class="col-md-4">
+                                <div class="row">
                                 <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
                                         <h3 data-aos="fade-up">Pages</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li data-aos="fade-up"><a href="blog.html" class="text-decoration-none">Blog</a></li>
-                                            <li data-aos="fade-up"><a href="blog-single.html" class="text-decoration-none">Blog Details</a></li>
+                                            <li data-aos="fade-up"><a href="/" class="text-decoration-none">Home</a></li>
+                                            <li data-aos="fade-up"><a href="/about-us" class="text-decoration-none">About Us</a></li>
+                                            <li data-aos="fade-up"><a href="#service" class="text-decoration-none">Services</a></li>
+                                            <li data-aos="fade-up"><a href="/career" class="text-decoration-none">Career</a></li>
                                             <li data-aos="fade-up"><a href="/contact-us" class="text-decoration-none">Contact</a></li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                                </div> -->
+                                <!-- <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                                    <div class="footer-single-col">
+                                        <h3 data-aos="fade-up">Pages</h3>
+                                        <ul class="list-unstyled footer-nav-list mb-lg-0">
+                                            <li data-aos="fade-up"><a href="blog.html" class="text-decoration-none">Blog</a></li>
+                                            <li data-aos="fade-up"><a href="blog-single.html" class="text-decoration-none">Blog Details</a></li> 
+                                           <li data-aos="fade-up"><a href="/contact-us" class="text-decoration-none">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
                                         <h3 data-aos="fade-up">Template</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
@@ -830,7 +846,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -853,9 +869,12 @@
                         <div class="col-md-4 col-lg-4">
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/crawlmagic/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/crawlmagic_solutions/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-outline-light btn-floating m-1" href="https://crawlmagic.com/" target="_blank" role="button"><i class="fab fa-google"></i></a>
+                                    <!-- <li class="list-inline-item"><a href="https://www.facebook.com/crawlmagic/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                     <li class="list-inline-item"><a href="https://www.instagram.com/crawlmagic_solutions/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://crawlmagic.com/" target="_blank"><i class="fab fa-dribbble"></i></a></li> -->
                                 </ul>
                             </div>
                         </div>

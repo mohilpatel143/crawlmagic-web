@@ -47713,6 +47713,9 @@ fieldset:disabled .btn {
   content: '\10e2cf';
 }
 
+
+
+
 @font-face {
   font-family: 'Font Awesome 6 Pro';
   font-style: normal;
@@ -57041,6 +57044,8 @@ li.setup-process-item:not(:last-child):before {
     transform: scale(1.5);
   }
 }
+
+
 
 /* line 4416, src/assets/scss/custom/_style.scss */
 .cyber-count-box {
