@@ -3,24 +3,24 @@ version: '3'
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:5001
     volumes:
       - .:/app
     ports:
-      - "8000:8000"
+      - "5001:5001"
 
-  rasa:
-    image: rasa/rasa:3.2.1-full
-    ports:
-      - 5005:5005
-    volumes:
-      - ./:/app
-    command: run -m models --enable-api --cors "*"
+#  rasa:
+#    image: rasa/rasa:3.2.1-full
+#    ports:
+#      - 5005:5005
+#    volumes:
+#      - ./:/app
+#    command: run -m models --enable-api --cors "*"
 
-  action_server:
-    image: rasa/rasa:3.2.1-full
-    volumes:
-      - ./actions:/app/actions
-    ports:
-      - 5055:5055
+#  action_server:
+#    image: rasa/rasa:3.2.1-full
+#    volumes:
+#      - ./actions:/app/actions
+#    ports:
+#      - 5055:5055
   
