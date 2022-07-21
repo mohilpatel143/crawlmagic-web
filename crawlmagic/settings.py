@@ -133,8 +133,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'mohil.crawlmagic@gmail.com'
-EMAIL_HOST_PASSWORD = 'crwalmagic@07'
+EMAIL_HOST_USER = 'crawlmagic.management@gmail.com'
+EMAIL_HOST_PASSWORD = 'xbnqrloiutwzndkv'
 
 APPLICATION_EMAIL = 'Admin<test@gmail.com>'
 DEFAULT_FROM_EMAIL = 'Admin<test@gmail.com>'

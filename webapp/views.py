@@ -27,7 +27,7 @@ def home(request):
         html_tpl_path = 'webapp/email-message.html'
         context_data = {'email': f"{email}" }
         email_html_template = get_template(html_tpl_path).render(context_data)
-        receiver_email = 'patelmohil143@gmail.com'
+        receiver_email = 'mohil.crawlmagic@gmail.com'
         email_msg = EmailMessage('Welcome from django app', 
                                     email_html_template, 
                                     settings. APPLICATION_EMAIL,
@@ -99,7 +99,7 @@ def contactus(request):
         html_tpl_path = 'webapp/contact-us-message.html'
         context_data = {'firstname': f"{first_name}", 'lastname': f"{last_name}", 'phone': f"{phone}", 'email': f"{email}", 'message': f"{message}" }
         email_html_template = get_template(html_tpl_path).render(context_data)
-        receiver_email = 'patelmohil143@gmail.com'
+        receiver_email = 'mohil.crawlmagic@gmail.com'
         email_msg = EmailMessage('Welcome from django app', 
                                     email_html_template, 
                                     settings. APPLICATION_EMAIL,
