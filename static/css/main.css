@@ -3462,6 +3462,7 @@ textarea.form-control-lg {
 
 
 
+
 .slider {
   background: url("/static/images/hero-9-img (1).png") no-repeat;
   /* background-size: contain; */
@@ -3482,99 +3483,17 @@ textarea.form-control-lg {
   height: 780px;
 }
 
-
-
-.sub-menu-2 {
-  display: none;
-}
-
-.hover-me:hover .sub-menu-2 {
-  position: absolute;
-  display: block;
-  margin-left: 231px;
-  margin-top: -45px;
-  color: #175cff;
-}
-
-.hover-me a {
-  color: #575757;
-}
-
-.dropdown-grid-item a:hover .hover-me {
-  color: var(--bs-primary);
-  opacity: 1;
-}
-
-/* 
-.dropdown-grid-item:hover a{
-  color: #175cff;
-  opacity: 1;
-} */
-
-
-/* fas fa-caret-right icon set */
-.hover-me i{
-  position: absolute;
-  float: right;
-  right: 17px;
-} 
-
-
-.div .hero-section {
-  opacity: 0.3;
-}
-
-@media screen and (max-width:1200px){
-  .sub-menu-2 a .drop-title{ 
-    position: relative;
-    width: 70%;
-    left: 0;
-    /* background-color: yellow; */
-  }
-  /* .hover-me{
-    position: absolute;
-    z-index: 99;
-    right: 0;
-    top: 0;
-    display: block;
-    height: 46px;
-    width: 100%;
-    cursor: pointer;
-  }
-
-  .hover-me ul li{
-    list-style: none;
-    line-height: 1;
-  } */
-
-  .hover-me i{
-    position: absolute;
-    float: right;
-    right: 174px;
-  }
-
-  .hover-me:hover .sub-menu-2 {
-    position: absolute;
-    display: block;
-    /* background-color: green; */
-    margin-left: 195px;
-    margin-top: -45px;
-    color: #175cff;
-  } 
-}
-
-
-
-
-
-
 .content {
-  /* background-color: yellow; ----------------*/
+  background-color: yellow;
   display: flex;
   /* text-align: center; */
   align-items: center;
 }
 
+.content .contenttext {
+  /* background-color: green; --------------- */
+
+}
 
 .contentimg {
   /* background-color: #1000f0; ---------------- */
@@ -3801,66 +3720,50 @@ textarea.form-control-lg {
 }
 
 
-.techtab{
+.tab-content{
   /* background-color: red; */
-  height: 100%;
+  height: 65vh;
 }
 .technologytimg {
   /* background-color: #1000f0; ---------------- */
   width: 600px;
   height: 550px;
 }
-@media (min-width:1000px) and (max-width:1400px){
+@media (min-width:1000px) and (max-width:1370px){
+  .tab-content{
+    height: 45vh;
+  }
   .technologytimg{
-    width: 450px;
-    height: 500px;
+    width: 400px;
+    height: 350px;
   }
 }
-@media (min-width:800px) and (max-width:1000px){
-  .technologytimg{
-    width: 350px;
-    height: 550px;
+@media (min-width:700px) and (max-width:1000px){
+  .tab-content{
+    height: 50vh;
   }
-}
-@media (min-width:750px) and (max-width:800px){
   .technologytimg{
-    width: 350px;
-    height: 550px;
-  }
-}
-
-@media (min-width:450px) and (max-width:750px){
-  .technologytimg{
-    width: 425px;
-    height: 300px;
-  }
-}
-
-/* footer navbaar */
-.footernavlink ul{
-  display: flex; 
-  list-style: none;
-}
-.footernavlink li {
-  text-decoration: none;
-  margin: 0 15px; 
-}
-.footernavlink li a{
-  text-decoration: none;
-}
-
-@media screen and (max-width:450px){
-  .technologytimg{
-    width: 200px;
+    width: 300px;
     height: 250px;
   }
-  .footernavlink ul {
-    display: block;
-    /* background-color: green; */
+}
+@media (min-width:350px) and (max-width:700px){
+  .tab-content{
+    height: 85vh;
   }
-  .footernavlink li a{
-    text-decoration: none;
-    margin: 0 15px; 
+  .technologytimg{
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:350px){
+  .tab-content{
+    height: 87vh;
+  }
+  .technologytimg{
+    width: 130px;
+    height: 100px;
   }
 }
 
@@ -3873,30 +3776,9 @@ textarea.form-control-lg {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.demosection{
+  background-color: red;
+}
 
 
 
@@ -6178,11 +6060,10 @@ fieldset:disabled .btn {
 .navbar>.container,
 .navbar>.container-fluid,
 .navbar>.container-lg,
-.navbar>.container-md,  
+.navbar>.container-md,
 .navbar>.container-sm,
 .navbar>.container-xl,
 .navbar>.container-xxl {
-  padding-right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47887,10 +47768,6 @@ fieldset:disabled .btn {
 .fa-regular,
 .far {
   font-weight: 400;
-  /* color: white; */
-}
-.far {
-  color: white;
 }
 
 @font-face {
@@ -52373,6 +52250,47 @@ select:invalid {
 
 
 
+.sub-menu-2 {
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-left: 231px;
+  margin-top: -45px;
+  color: #175cff;
+}
+
+.hover-me a {
+  color: #575757;
+}
+
+.dropdown-grid-item a:hover .hover-me {
+  color: var(--bs-primary);
+  opacity: 1;
+}
+
+/* 
+.dropdown-grid-item:hover a{
+  color: #175cff;
+  opacity: 1;
+} */
+
+.sub-menu-2 {
+  color: va;
+}
+
+
+.div .hero-section {
+  opacity: 0.3;
+}
+
+
+
+
+
+
 
 
 /* line 1095, src/assets/scss/custom/_style.scss */
@@ -52524,8 +52442,7 @@ select:invalid {
 
 /* line 1193, src/assets/scss/custom/_style.scss */
 .offcanvas-header button.close-btn {
-  /* background: var(--bs-danger-soft); */
-  background-color: darkblue;
+  background: var(--bs-danger-soft);
   width: 30px;
   height: 30px;
   text-align: center;
@@ -52539,7 +52456,6 @@ select:invalid {
 /* line 1203, src/assets/scss/custom/_style.scss */
 .offcanvas-header button.close-btn i {
   line-height: 29px;
-  color: white;
 }
 
 /* line 1206, src/assets/scss/custom/_style.scss */
