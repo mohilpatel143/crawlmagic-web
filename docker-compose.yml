@@ -3,11 +3,11 @@ version: '3'
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:5001
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app
     ports:
-      - "5001:5001"
+      - "8000:8000"
 
 #  rasa:
 #    image: rasa/rasa:3.2.1-full
