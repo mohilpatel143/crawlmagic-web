@@ -9,12 +9,6 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 COPY . /code/
 
-
-RUN mkdir -p /vol/web/media
-RUN mkdir -p /vol/web/static
-
-CMD ["entrypoint.sh"]
-
 #RUN pip install --upgrade pip
 #RUN python -m pip install rasa
 
