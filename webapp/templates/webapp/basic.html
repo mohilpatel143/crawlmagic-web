@@ -42,16 +42,38 @@
     <title>{% block title %} {% endblock %}</title>
 
     <!--google fonts-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--h1-h2-h3 fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    
+
+    <!--h4-h4-h6 fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+
+    <!--p fonts-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet"> -->
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
     <!--build:css-->
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- endbuild -->
 
     <!--custom css start-->
-    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'css/custom.css' %}" /> -->
     <!--custom css end-->
 
     <!---------bootstramp links----------->
@@ -261,7 +283,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="hover-me"><a class="nav-link_sub" href="">Entertainment <i class="fas fa-caret-right"></i> </a>
+                                        <div class="hover-me"><a class="nav-link_sub" href="">Entertainment <i class="fas fa-caret-right"></i> </a>
                                             <div class="sub-menu-2">
                                                 <div class="border-0 rounded-custom shadow bg-white">
                                                     <a href="/streaming-OTT-platform-app-data" class="dropdown-link px-0">
@@ -276,8 +298,8 @@
                                                     
                                                 </div>
                                             </div>
-                                        </div> -->
-                                        <!-- <div class="hover-me"><a class="nav-link_sub" href="">Real Estate <i class="fas fa-caret-right"></i> </a>
+                                        </div>
+                                        <div class="hover-me"><a class="nav-link_sub" href="">Real Estate <i class="fas fa-caret-right"></i> </a>
                                             <div class="sub-menu-2">
                                                 <div class="border-0 rounded-custom shadow bg-white">
                                                     <a href="/real-estate-data-intelligence" class="dropdown-link px-0">
@@ -294,8 +316,8 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div> -->
-                                        <!-- <div class="hover-me"><a class="nav-link_sub" href="">Recruitment <i class="fas fa-caret-right"></i> </a>
+                                        </div>
+                                        <div class="hover-me"><a class="nav-link_sub" href="">Recruitment <i class="fas fa-caret-right"></i> </a>
                                             <div class="sub-menu-2">
                                                 <div class="border-0 rounded-custom shadow bg-white">
                                                     <a href="/job-listings-and-data-feeds" class="dropdown-link px-0">
@@ -304,8 +326,8 @@
                                                     
                                                 </div>
                                             </div>
-                                        </div> -->
-                                        <!-- <div class="hover-me"><a class="nav-link_sub" href="">News & Media <i class="fas fa-caret-right"></i> </a>
+                                        </div>
+                                        <div class="hover-me"><a class="nav-link_sub" href="">News & Media <i class="fas fa-caret-right"></i> </a>
                                             <div class="sub-menu-2">
                                                 <div class="border-0 rounded-custom shadow bg-white">
                                                     <a href="/news-aggregation-and-intelligence" class="dropdown-link px-0">
@@ -317,21 +339,16 @@
                                                     
                                                 </div>
                                             </div>
-                                        </div> -->
-                                        <!-- <div class="hover-me"><a class="nav-link_sub" href="">Finance <i class="fas fa-caret-right"></i> </a>
+                                        </div>
+                                        <div class="hover-me"><a class="nav-link_sub" href="">Finance <i class="fas fa-caret-right"></i> </a>
                                             <div class="sub-menu-2">
                                                 <div class="border-0 rounded-custom shadow bg-white">
                                                     <a href="/stock-market-and-financial-data-scraping" class="dropdown-link px-0">
                                                         <div class="drop-title" href="">Stock Market & Financial Data Scraping</div>
                                                     </a>
-                                                    
                                                 </div>
                                             </div>
-                                        </div> -->
-            
-                                        
-            
-            
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -496,7 +513,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- <div class="hover-me"><a class="nav-link_sub" href="">Food Delivery <i class="fas fa-caret-right"></i> </a>
+                                            <div class="hover-me"><a class="nav-link_sub" href="">Food Delivery <i class="fas fa-caret-right"></i> </a>
                                                 <div class="sub-menu-2">
                                                     <div class="border-0 rounded-custom shadow bg-white">
                                                         <a href="/competitor-pricing-for-food-delivery" class="dropdown-link px-0">
@@ -513,7 +530,7 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                            </div> -->
+                                            </div>
                                             <div class="hover-me"><a class="nav-link_sub" href="">Social Media <i class="fas fa-caret-right"></i> </a>
                                                 <div class="sub-menu-2">
                                                     <div class="border-0 rounded-custom shadow bg-white">
@@ -546,7 +563,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- <div class="hover-me"><a class="nav-link_sub" href="">Entertainment <i class="fas fa-caret-right"></i> </a>
+                                            <div class="hover-me"><a class="nav-link_sub" href="">Entertainment <i class="fas fa-caret-right"></i> </a>
                                                 <div class="sub-menu-2">
                                                     <div class="border-0 rounded-custom shadow bg-white">
                                                         <a href="/streaming-OTT-platform-app-data" class="dropdown-link px-0">
@@ -561,8 +578,8 @@
                                                         
                                                     </div>
                                                 </div>
-                                            </div> -->
-                                            <!-- <div class="hover-me"><a class="nav-link_sub" href="">Real Estate <i class="fas fa-caret-right"></i> </a>
+                                            </div>
+                                            <div class="hover-me"><a class="nav-link_sub" href="">Real Estate <i class="fas fa-caret-right"></i> </a>
                                                 <div class="sub-menu-2">
                                                     <div class="border-0 rounded-custom shadow bg-white">
                                                         <a href="/real-estate-data-intelligence" class="dropdown-link px-0">
@@ -579,8 +596,8 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                            </div> -->
-                                            <!-- <div class="hover-me"><a class="nav-link_sub" href="">Recruitment <i class="fas fa-caret-right"></i> </a>
+                                            </div>
+                                            <div class="hover-me"><a class="nav-link_sub" href="">Recruitment <i class="fas fa-caret-right"></i> </a>
                                                 <div class="sub-menu-2">
                                                     <div class="border-0 rounded-custom shadow bg-white">
                                                         <a href="/job-listings-and-data-feeds" class="dropdown-link px-0">
@@ -589,8 +606,8 @@
                                                         
                                                     </div>
                                                 </div>
-                                            </div> -->
-                                            <!-- <div class="hover-me"><a class="nav-link_sub" href="">News & Media <i class="fas fa-caret-right"></i> </a>
+                                            </div>
+                                            <div class="hover-me"><a class="nav-link_sub" href="">News & Media <i class="fas fa-caret-right"></i> </a>
                                                 <div class="sub-menu-2">
                                                     <div class="border-0 rounded-custom shadow bg-white">
                                                         <a href="/news-aggregation-and-intelligence" class="dropdown-link px-0">
@@ -602,8 +619,8 @@
                                                         
                                                     </div>
                                                 </div>
-                                            </div> -->
-                                            <!-- <div class="hover-me"><a class="nav-link_sub" href="">Finance <i class="fas fa-caret-right"></i> </a>
+                                            </div>
+                                            <div class="hover-me"><a class="nav-link_sub" href="">Finance <i class="fas fa-caret-right"></i> </a>
                                                 <div class="sub-menu-2">
                                                     <div class="border-0 rounded-custom shadow bg-white">
                                                         <a href="/stock-market-and-financial-data-scraping" class="dropdown-link px-0">
@@ -612,11 +629,7 @@
                                                         
                                                     </div>
                                                 </div>
-                                            </div> -->
-                
-                                            
-                
-                
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -831,7 +844,7 @@
     <script src="{% static 'js/vendors/parallax.min.js' %}"></script>
     <script src="{% static 'js/vendors/aos.js' %}"></script>
     <script src="{% static 'js/app.js' %}"></script>
-    <script>!(function () {
+    <!-- <script>!(function () {
             let e = document.createElement("script"),
                 t = document.head || document.getElementsByTagName("head")[0];
             (e.src =
@@ -851,7 +864,7 @@
                 }),
                 t.insertBefore(e, t.firstChild);
         })();
-    </script>
+    </script> -->
 
     <!--endbuild-->
     {% block js %} {% endblock %}
