@@ -236,8 +236,9 @@ var THEMETAGS = THEMETAGS || {};
 
   AOS.init({
     easing: "ease-in-out",
+    mirror: true,
     // default easing for AOS animations
-    once: true,
+    // once: true,
     // whether animation should happen only once - while scrolling down
     duration: 500 // values from 0 to 3000, with step 50ms
 

@@ -3453,12 +3453,32 @@ textarea.form-control-lg {
 
 
 
+h1 { 
+  font-family: 'Days One', sans-serif !important;
+}
+h2 { 
+  font-family: 'Days One', sans-serif !important;
+}
+h3 { 
+  font-family: 'Days One', sans-serif !important;
+}
+h4 {
+  font-family: 'Capriola', sans-serif !important;
+}
+h5 {
+  font-family: 'Capriola', sans-serif !important;
+}
+h6 {
+  font-family: 'Capriola', sans-serif !important;
+}
 
 
 
-
-
-
+p {
+  /* font-family: 'Arima Madurai', cursive !important; */
+  /* font-family: 'Lemonada', cursive !important; */
+  font-family: 'Rubik', sans-serif !important;
+}
 
 
 
